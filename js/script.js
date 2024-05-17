@@ -40,6 +40,15 @@ createApp({
             this.immagineAttiva--
         },
 
+        thumbActive(i) {
+            if (this.immagineAttiva == i) {
+                return "active"
+            }
+            else {
+                return ""
+            }
+        }
+
     },
     mounted() {
     },
