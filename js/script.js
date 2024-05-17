@@ -34,9 +34,8 @@ createApp({
 
     },
     mounted() {
-        
+        console.log(this.slides);
     },
 }).mount(`#app`)
 
-console.log(slides);
 
