@@ -25,16 +25,23 @@ createApp({
         },
 
         prossimaImmagine() {
+            
+            if (this.immagineAttiva == this.slides.length - 1) {
+                this.immagineAttiva = 0
+            }
             this.immagineAttiva++
         },
 
         precedenteImmagine() {
+            
+            if (this.immagineAttiva == 0) {
+                this.immagineAttiva = this.slides.length - 1
+            }
             this.immagineAttiva--
         },
 
     },
     mounted() {
-        console.log(this.slides);
     },
 }).mount(`#app`)
 
